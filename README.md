@@ -1,11 +1,16 @@
 ## SIMPLE BLOGPOST LARAVEL API
-This is an api built for blog. It was built with laravel
+A fully functional RESTful API for blog system built with laravel. It includes the following concepts:
+- CRUD system
+- Provide the Entity Relationship Diagram of the system.
+- Possible entities: ['Users','Posts','Comments'] <br>
+Tools: Laravel, Postman API, etc
 
-
-##
-The ER diagram of the blog system             |
+## Database Model
+The Entity Relationship (ER) Diagram Model of the blog system             |
 :-------------------------:
 ![Screenshot](resources/assets/imgs/blogPostERD.png)  
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. <br>

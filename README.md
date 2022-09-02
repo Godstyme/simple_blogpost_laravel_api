@@ -3,6 +3,7 @@ A fully functional RESTful API for blog system built with laravel. It includes t
 - CRUD system
 - Provide the Entity Relationship Diagram of the system.
 - Possible entities: ['Users','Posts','Comments'] <br>
+
 Tools: Laravel, Postman API, etc
 
 ## Database Model
@@ -10,11 +11,27 @@ The Entity Relationship (ER) Diagram Model of the blog system             |
 :-------------------------:
 ![Screenshot](resources/assets/imgs/blogPostERD.png)  
 
+## Quick Installation ⚙️
+First, clone repo and install all dependencies.
+```sh
+$ git clone https://github.com/Godstyme/simple_blogpost_laravel_api.git
+$ cd simple_blogpost_laravel_api
+$ composer install
+```
+Setup database by creating a database called `blog_post` in your `phpMyAdmin`. This example uses the `blog_post` database as configured in the app `.env` file.
+We have to use a migration command to prepare the database migration classes for the target tables.
 
-## About Laravel
+```sh
+$ php artisan migrate
+$ php artisan serve
+``` 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. <br>
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Don't forget to star the project :)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Getting Started with Laravel
+
+For help getting started with Laravel, check out [documentation](https://laravel.com/docs)
+<br>
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. 
 

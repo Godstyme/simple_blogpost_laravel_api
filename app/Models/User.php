@@ -11,6 +11,10 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Model implements Authenticatable
 {
     use HasApiTokens,AuthenticableTrait;
-    public $table = "blog_users";
-    protected $hidden = ['password'];
+    protected $table = "blog_users";
+    protected $hidden = ['password','updated_at'];
+
+    function post(){
+        return $this->hasMany(Post::class,'blog_users_id');
+    }
 }
